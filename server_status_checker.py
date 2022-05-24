@@ -43,6 +43,6 @@ if __name__ == '__main__':
             log.append(str(datetime.datetime.now())+": UP TIME")
             print(log)
         else:
+            log.append(str(datetime.datetime.now())+": SERVER DOWN")
             log_report(log)
             email(Email,password,receiver)
-            log.append(str(datetime.datetime.now())+": SERVER DOWN")
