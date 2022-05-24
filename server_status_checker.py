@@ -45,3 +45,4 @@ if __name__ == '__main__':
         else:
             log_report(log)
             email(Email,password,receiver)
+            log.append(str(datetime.datetime.now())+": SERVER DOWN")
